@@ -8,27 +8,115 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 
 <style>
-/* STYLE GOES HERE IF NEEDED */
+.jumbotron{
+    background: #faa14d !important;
+}
 
+.jumbotron h1{
+  font-family: 'Staatliches', cursive;
+  font-size: 4em;
+}
 </style>
 
 </head>
 <body>
 
-  <h1>Book a Teacher</h1>
-  <p>User Experience Web Interface Design</p> 
-  
-  <nav>
-  <!-- NAVIGATION GOES HERE -->
-  
-  </nav>
+	<div class="jumbotron text-center text-white bg-warning">
+	<h1 class="font-weight-bold">Book a Teacher</h1>
+	<p>User Experience Web Interface Design</p> 
+	</div>
+	
+	<nav>
+	<!-- NAVIGATION GOES HERE -->
+		<ul class="nav nav-tabs">
+			<li class="nav-item"><a href="index.html" class="nav-link">Teachers</a></li>
+			<li class="nav-item"><a href="booking.html" class="nav-link active">Booking</a></li>
+			<li class="nav-item"><a href="" class="nav-link disabled">About</a></li>
+	</nav>
 
-  <div class="container">
-  <!-- FORM GOES HERE -->
-
-  </div>
-  
-<footer>
+	<div class="w-75 my-5 mx-auto">
+	<!-- FORM GOES HERE -->
+	
+	<form class="d-block d-sm-flex">
+		<div class="pr-5 w-50">
+		
+			<div class="form-group">
+			<p class="font-weight-bold">Name</p>
+			<input type="text" name="name" placeholder="Name" class="w-100 form-control">
+			</div>
+			
+			<div class="form-group">
+			<p class="font-weight-bold">Email</p>
+			<input type="email" name="email" placeholder="Email" class="w-100 form-control" required>
+			</div>
+			
+			<div class="form-group">
+			<p class="font-weight-bold">Phone</p>
+			<input type="tel" name="phone" placeholder="Phone" class="w-100 form-control">
+			</div>
+			
+			<div class="form-group">
+			<p class="font-weight-bold">Topics to discuss</p>
+			<textarea class="w-100 form-control"></textarea>
+			
+			</div>
+		</div>
+		<div class="w-50">
+			
+			<div class="form-group">
+			<p class="font-weight-bold">Level</p>
+			<select name="level" class="w-100 form-control">
+				<option>Choose...</option>
+				<option>Beginner</option>
+				<option>Basic</option>
+				<option>Advanced</option>
+			</select>
+			</div>
+			
+			<div class="form-group">
+			<p class="font-weight-bold">Time of Choice</p>
+			<div class="form-check">
+			<input type="radio" name="time" value="day" checked id="day">
+			<label class="form-check-label" for="day">Day</label>
+			</div>
+			<div class="form-check">
+			<input type="radio" name="time" value="evening" id="night">
+			<label class="form-check-label">Evening</label>
+			</div>
+			</div>
+			
+			<div class="form-group">
+			<p class="font-weight-bold">Date</p>
+			<input type="date" name="date" placeholder="yyyy-mm-dd" class="w-100 form-control">
+			</div>
+			
+			<div class="form-group">
+			<p class="font-weight-bold">Invite Teachers</p>
+			<div class="form-check">
+			<input type="checkbox" name="teacher1" value="jennifer" class="form-check-inupt"id="jennifer" checked>
+			<label class="form-check-label" for="jennifer">Jennifer</label>
+			</div>
+			<div class="form-check">
+			<input type="checkbox" name="teacher2" value="reza" class="form-check-inupt"id="reza" checked>
+			<label class="form-check-label" for="reza">Reza</label>
+			</div>
+			<div class="form-check">
+			<input type="checkbox" name="teacher3" value="alicia" class="form-check-inupt"id="alicia" checked>
+			<label class="form-check-label" for="alicia">Alicia</label>
+			</div>
+			</div>
+			
+		</div>
+	</form>
+	
+	<div>
+	<input type="submit" value="Book" class="btn btn-primary">
+	<input type="reset" value="Clear" class="btn btn-primary">
+	</div>
+	
+	</div>
+	
+<footer class="text-center bg-dark text-white p-5">
     <div>Made with Love in Saint-Lambert</div>
 </footer>  
 
